@@ -1,0 +1,44 @@
+<!--
+  ~ main.xml
+  ~ Copyright (C) 2014 Amin Bandali <me@aminb.org>
+  ~
+  ~ MATHTools is free software: you can redistribute it and/or modify it
+  ~ under the terms of the GNU General Public License as published by the
+  ~ Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ MATHTools is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along
+  ~ with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.aminb.mathtools.app.activity.MainActivity" >
+    <item
+        android:id="@+id/action_feedback"
+        android:showAsAction="always"
+        android:title="@string/action_feedback"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_start_conversation"/>
+    <item
+        android:showAsAction="always"
+        android:title="@string/action_about"
+        android:orderInCategory="200"
+        android:icon="@android:drawable/ic_menu_info_details">
+        <menu>
+            <item
+                android:id="@+id/action_about"
+                android:title="@string/action_about"
+                android:orderInCategory="100" />
+            <item
+                android:id="@+id/action_changelog"
+                android:title="@string/changelog"
+                android:orderInCategory="200" />
+        </menu>
+    </item>
+</menu>

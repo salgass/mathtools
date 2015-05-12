@@ -1,0 +1,46 @@
+<!--
+  ~ styles.xml
+  ~ Copyright (C) 2014 Amin Bandali <me@aminb.org>
+  ~
+  ~ MATHTools is free software: you can redistribute it and/or modify it
+  ~ under the terms of the GNU General Public License as published by the
+  ~ Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ MATHTools is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  ~ See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along
+  ~ with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <style name="Animation.MathTools.Activity" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Mtactionbar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/Animation.MathTools.Activity</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/MathTools.ActionButton.Overflow</item>-->
+    </style>
+
+    <style name="carddemo_myapps_main_inner_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="MathTools.ActionButton.Overflow" parent="android:Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_ab_overflow_white</item>
+    </style>
+
+</resources>
